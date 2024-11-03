@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sable Ayala</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Sable Ayala</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Nov 2024 14:19:06 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Post</title>
+      <link>http://localhost:1313/posts/test-post/</link>
+      <pubDate>Sun, 03 Nov 2024 14:19:06 -0500</pubDate>
+      <guid>http://localhost:1313/posts/test-post/</guid>
+      <description>\[&#xA;\begin{aligned}&#xA;\tau &amp;= rF\sin\phi&#xA;\end{aligned}&#xA;\]</description>
+    </item>
+  </channel>
+</rss>
