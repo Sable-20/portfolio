@@ -5,6 +5,12 @@ theme = "hermit-v2"
 pygmentsCodefences = true
 pygmentsUseClasses = true
 
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
 [params.author]
   name = "Sable"
 
@@ -29,6 +35,16 @@ pygmentsUseClasses = true
   dateformNumTime = "2006-01-02 15:04 -0700"
   code_copy_button = true
   scrollToTop = true
+  footerHideThemeName = true
+  shareSocial = true
+
+  [[params.socialLinks]]
+    name = "github"
+    url = "https://github.com/Sable-20"
+
+  [[params.socialLinks]]
+    name = "x"
+    url = "https://x.com/theokaydev"
 
 [menu]
 
@@ -36,3 +52,8 @@ pygmentsUseClasses = true
     name = "Posts"
     url = "posts/"
     weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "about/"
+    weight = 20
