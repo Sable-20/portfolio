@@ -11,20 +11,11 @@
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
     "test:unit": "vitest",
-    "test": "npm run test:unit -- --run",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "test": "npm run test:unit -- --run"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^3.2.2",
-    "@storybook/addon-essentials": "^8.4.2",
-    "@storybook/addon-interactions": "^8.4.2",
-    "@storybook/addon-svelte-csf": "^5.0.0-next.11",
-    "@storybook/blocks": "^8.4.2",
-    "@storybook/svelte": "^8.4.2",
-    "@storybook/sveltekit": "^8.4.2",
-    "@storybook/test": "^8.4.2",
     "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/adapter-static": "^3.0.6",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
     "@tailwindcss/container-queries": "^0.1.1",
@@ -32,16 +23,19 @@
     "@tailwindcss/typography": "^0.5.15",
     "@types/eslint": "^9.6.0",
     "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.14",
     "eslint": "^9.7.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-storybook": "^0.11.0",
     "eslint-plugin-svelte": "^2.36.0",
+    "flowbite": "^2.5.2",
+    "flowbite-svelte": "^0.47.3",
+    "flowbite-svelte-icons": "^2.0.2",
     "globals": "^15.0.0",
     "mdsvex": "^0.11.2",
     "prettier": "^3.3.2",
     "prettier-plugin-svelte": "^3.2.6",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "storybook": "^8.4.2",
     "svelte": "^5.0.0",
     "svelte-check": "^4.0.0",
     "tailwindcss": "^3.4.9",
@@ -51,11 +45,16 @@
     "vitest": "^2.0.4"
   },
   "dependencies": {
-    "@inlang/paraglide-sveltekit": "^0.11.1"
+    "@inlang/paraglide-sveltekit": "^0.11.1",
+    "@svelteuidev/composables": "^0.15.7",
+    "@svelteuidev/core": "^0.15.7",
+    "@svelteuidev/dates": "^0.15.7",
+    "@svelteuidev/motion": "^0.15.7",
+    "@svelteuidev/preprocessors": "^0.15.7",
+    "@svelteuidev/prism": "^0.15.7",
+    "dayjs": "^1.11.13"
   },
   "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
+    "extends": []
   }
 }
