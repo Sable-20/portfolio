@@ -13,18 +13,25 @@ const height = 630;
 const width = 1200;
 
 const posts = await getCollection("blog").then((collection: any[]) =>
-  collection.reverse().filter(post => import.meta.env.DEV || !post.data.draft),
+  collection
+    .reverse()
+    .filter((post) => import.meta.env.DEV || !post.data.draft),
 );
 
 export function getStaticPaths() {
-  return posts.map((post: { slug: any; data: { title: any; description: any; language: any; }; }) => ({
-    params: { slug: post.slug },
-    props: { 
-      title: post.data.title,
-      description: post.data.description, 
-      language: post.data.language 
-    },
-  }));
+  return posts.map(
+    (post: {
+      slug: any;
+      data: { title: any; description: any; language: any };
+    }) => ({
+      params: { slug: post.slug },
+      props: {
+        title: post.data.title,
+        description: post.data.description,
+        language: post.data.language,
+      },
+    }),
+  );
 }
 
 export const GET: APIRoute = async ({ params, props }) => {

@@ -1,7 +1,7 @@
 ---
 title: Blogpost 1
 pubDate: 11/09/2022 14:25
-author: "Elian Van Cutsem"
+author: "Sable Ayala"
 tags:
   - JavaScript
   - Astro
@@ -48,7 +48,7 @@ Insistere pugno. Cum morae vigilantibus dulces Cycnus: neque cum sororis.
 Hac Aestas solet docebo tandem tamquam omnis vitiantur mitte, vatis in animique
 infelix passimque. Superasset onus.
 
-Lift($L$) can be determined using the Lift Coefficient $C_L$ like the following equation:
+Lift($$L$$) can be determined using the Lift Coefficient $$C_L$$ like the following equation:
 
 $$
 L = \frac{1}{2} \rho v^2 S C_L

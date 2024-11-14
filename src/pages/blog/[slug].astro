@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   //     import.meta.env.DEV || !post.data.draft
   //   }),
   // );
-  return blogEntries.map((blogpost: { slug: any; }) => ({
+  return blogEntries.map((blogpost: { slug: any }) => ({
     params: { slug: blogpost.slug },
     props: { blogpost },
   }));

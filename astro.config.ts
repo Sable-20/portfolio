@@ -2,8 +2,7 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import UnoCSS from "unocss/astro";
 import remarkMath from "remark-math";
-import rehypeMathJax from "rehype-mathjax";
-import rehypeMathJaxBrowser from "rehype-mathjax/browser";
+import rehypeKatex from "rehype-katex";
 import remarkRehype from "remark-rehype";
 
 export default defineConfig({
@@ -23,7 +22,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkMath, remarkRehype],
-    rehypePlugins: [rehypeMathJax],
+    rehypePlugins: [rehypeKatex],
   },
   output: "static",
 });

@@ -11,7 +11,13 @@ interface Props {
 const { count } = Astro.props;
 
 const posts = await getCollection("blog").then((collection: any[]) =>
-  collection.reverse().filter((post: { data: { draft: any; }; }) => import.meta.env.DEV || !post.data.draft).slice(0, count ?? 3),
+  collection
+    .reverse()
+    .filter(
+      (post: { data: { draft: any } }) =>
+        import.meta.env.DEV || !post.data.draft,
+    )
+    .slice(0, count ?? 3),
 );
 ---
 

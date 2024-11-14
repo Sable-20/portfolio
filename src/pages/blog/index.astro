@@ -4,7 +4,12 @@ import Layout from "@layouts/Default.astro";
 import BlogList from "@components/blog/BlogList.astro";
 
 const posts = await getCollection("blog").then((collection: any[]) =>
-  collection.reverse().filter((post: { data: { draft: any; }; }) => import.meta.env.DEV || !post.data.draft),
+  collection
+    .reverse()
+    .filter(
+      (post: { data: { draft: any } }) =>
+        import.meta.env.DEV || !post.data.draft,
+    ),
 );
 ---
 

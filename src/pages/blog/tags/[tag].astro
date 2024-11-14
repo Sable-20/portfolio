@@ -7,14 +7,14 @@ import { Button } from "@eliancodes/brutal-ui";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog").then((collection: any[]) =>
-    collection.reverse().filter((post: { data: { draft: any; }; }) => {
-      import.meta.env.DEV || !post.data.draft
+    collection.reverse().filter((post: { data: { draft: any } }) => {
+      import.meta.env.DEV || !post.data.draft;
     }),
   );
 
   const tags: string[] = [];
 
-  allPosts.forEach((post: { data: { tags: any[]; }; }) => {
+  allPosts.forEach((post: { data: { tags: any[] } }) => {
     post.data.tags.forEach((tag: string) => {
       tags.push(tag.toLowerCase());
     });
@@ -25,7 +25,7 @@ export async function getStaticPaths() {
       params: { tag },
       props: {
         tag,
-        blogposts: allPosts.filter((post: { data: { tags: any[]; }; }) =>
+        blogposts: allPosts.filter((post: { data: { tags: any[] } }) =>
           post.data.tags.map((tag: string) => tag.toLowerCase()).includes(tag),
         ),
       },
