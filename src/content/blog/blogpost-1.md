@@ -6,22 +6,24 @@ tags:
   - JavaScript
   - Astro
   - UnoCSS
-imgUrl: '../../assets/astro.jpeg'
+imgUrl: "../../assets/astro.jpeg"
 description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
-layout: '../../layouts/BlogPost.astro'
+layout: "../../layouts/BlogPost.astro"
+language: "en-us"
+draft: false
 ---
 
 ## Deorum petiit ignis
 
-Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, *vox
-nocte sedesque*, decimo. Omnia esse, quam sive; conplevit illis indestrictus
+Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, _vox
+nocte sedesque_, decimo. Omnia esse, quam sive; conplevit illis indestrictus
 admovit dedit sub quod protectus, impedit non.
 
 ## Iovis late orbem Perseus sunt
 
 Aras reperire, sui motis correpti coniunx Onetor amore ferire lacertis, petiit.
-Bis pallor et mecum me, igne patruelibus *tendebam*, vultu sterilique terruerat
-*tempore* medium aera **eadem Mittor**.
+Bis pallor et mecum me, igne patruelibus _tendebam_, vultu sterilique terruerat
+_tempore_ medium aera **eadem Mittor**.
 
 - Non turba loca dederunt primordia ineamus Dictys
 - Tanti amat mundus sedula
@@ -45,3 +47,9 @@ Insistere pugno. Cum morae vigilantibus dulces Cycnus: neque cum sororis.
 
 Hac Aestas solet docebo tandem tamquam omnis vitiantur mitte, vatis in animique
 infelix passimque. Superasset onus.
+
+Lift($L$) can be determined using the Lift Coefficient $C_L$ like the following equation:
+
+$$
+L = \frac{1}{2} \rho v^2 S C_L
+$$

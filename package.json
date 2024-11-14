@@ -17,15 +17,18 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.4",
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
     "@eliancodes/brutal-ui": "^0.2.3",
     "@unocss/astro": "^0.57.7",
     "astro": "^4.16.10",
     "astro-font": "^0.0.80",
+    "rehype-mathjax": "^6.0.0",
+    "remark-math": "^6.0.0",
+    "remark-rehype": "^11.1.1",
     "satori": "^0.5.0",
     "satori-html": "^0.3.2",
-    "@astrojs/check": "^0.9.4",
     "typescript": "^5.6.3"
   },
   "devDependencies": {
