@@ -19,8 +19,9 @@
 		"scope": "markdown",
 		"prefix": "bfm",
 		"body": [
-			"title: Blogpost $UUID",
-			"pubDate: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE UTC$CURRENT_TIMEZONE_OFFSET",
+			"---",
+			"title: Blogpost {$UUID}",
+			"pubDate: $CURRENT_MONTH/$CURRENT_DATE/$CURRENT_YEAR $CURRENT_HOUR:$CURRENT_MINUTE UTC$CURRENT_TIMEZONE_OFFSET",
 			"author: \"Sable Ayala\"",
 			"tags:",
 			"  - Blog",
@@ -28,7 +29,8 @@
 			"description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.",
 			"layout: \"../../layouts/BlogPost.astro\"",
 			"language: \"en-us\"",
-			"draft: true"
+			"draft: true",
+			"---"
 		],
 		"description": "Create blog post front matter"
 	}

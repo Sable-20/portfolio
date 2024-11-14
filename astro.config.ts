@@ -4,6 +4,7 @@ import UnoCSS from "unocss/astro";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import remarkRehype from "remark-rehype";
+import rehypeKatexNoTranslate from "rehype-katex-notranslate";
 
 export default defineConfig({
   // used to generate images
@@ -22,7 +23,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkMath, remarkRehype],
-    rehypePlugins: [rehypeKatex],
+    rehypePlugins: [rehypeKatex, rehypeKatexNoTranslate],
   },
   output: "static",
 });
