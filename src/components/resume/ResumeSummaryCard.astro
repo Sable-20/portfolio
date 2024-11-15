@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Pill } from "@eliancodes/brutal-ui";
+import SummaryCard from "../generic/SummaryCard.astro";
+import { Button } from "@eliancodes/brutal-ui";
+
+interface Props {
+  component: CollectionEntry<"resume">;
+}
+
+const { component } = Astro.props;
+---
+
+<SummaryCard
+  title={component.data.title}
+  imgAlt={component.data.title}
+  imgSrc={component.data.imgUrl}
+  description={component.data.description}
+>
+  <div class="flex justify-end my-4">
+    <Button href={`/resume/${component.slug}/`}>Check me out!</Button>
+  </div>
+</SummaryCard>

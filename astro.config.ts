@@ -6,6 +6,8 @@ import rehypeKatex from "rehype-katex";
 import remarkRehype from "remark-rehype";
 import rehypeKatexNoTranslate from "rehype-katex-notranslate";
 
+import purgecss from "astro-purgecss";
+
 export default defineConfig({
   // used to generate images
   site:
@@ -15,7 +17,7 @@ export default defineConfig({
         ? `https://${process.env.VERCEL_URL}/`
         : "https://localhost:3000/",
   trailingSlash: "ignore",
-  integrations: [sitemap(), UnoCSS({ injectReset: true })],
+  integrations: [sitemap(), UnoCSS({ injectReset: true }), purgecss()],
   vite: {
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],

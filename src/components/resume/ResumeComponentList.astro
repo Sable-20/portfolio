@@ -1,0 +1,22 @@
+---
+import type { CollectionEntry } from "astro:content";
+import ResumeSummaryCard from '@components/resume/ResumeSummaryCard.astro';
+
+interface Props {
+  components: CollectionEntry<"resume">[];
+}
+
+const { components } = Astro.props;
+---
+
+<ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {
+    components.map((component) => {
+      return (
+        <li>
+          <ResumeSummaryCard component={component} />
+        </li>
+      )
+    })
+  }
+</ul>

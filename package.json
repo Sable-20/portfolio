@@ -24,6 +24,8 @@
     "@unocss/astro": "^0.57.7",
     "astro": "^4.16.10",
     "astro-font": "^0.0.80",
+    "astro-purgecss": "^4.6.2",
+    "purgecss": "^6.0.0",
     "rehype-katex": "^7.0.1",
     "rehype-katex-notranslate": "^1.1.4",
     "remark-math": "^6.0.0",
