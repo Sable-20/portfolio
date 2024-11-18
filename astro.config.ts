@@ -8,6 +8,8 @@ import rehypeKatexNoTranslate from "rehype-katex-notranslate";
 
 import purgecss from "astro-purgecss";
 
+import expressiveCode from "astro-expressive-code";
+
 export default defineConfig({
   // used to generate images
   site:
@@ -17,7 +19,14 @@ export default defineConfig({
         ? `https://${process.env.VERCEL_URL}/`
         : "https://localhost:3000/",
   trailingSlash: "ignore",
-  integrations: [sitemap(), UnoCSS({ injectReset: true }), purgecss()],
+  integrations: [
+    sitemap(), 
+    UnoCSS({ 
+      injectReset: true 
+    }), 
+    expressiveCode(), 
+    purgecss(),
+  ],
   vite: {
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],

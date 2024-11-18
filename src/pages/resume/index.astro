@@ -1,11 +1,15 @@
 ---
 import Layout from "@layouts/Default.astro";
+import ResumeComponentList from "@components/resume/ResumeComponentList.astro";
+import { getCollection } from "astro:content";
+
+const components = await getCollection("resume");
 ---
 <Layout
   title="Resume"
   description="A page holding my resume and further links to the parts of my resume in their own cards"
   pageTitle="Resume">
   <main class="bg-fuchsia p-6">
-    <p>holder</p>
+    <ResumeComponentList components={components} />
   </main>
 </Layout>
